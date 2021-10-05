@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+ <title>Curriculum Formulario MFMM</title>
+ <center>
+ <h1>CURRICULUM</h1>
+ <h1>VITAE</h1>
+ </center>
+ <script type="text/javascript" src="val.js"></script>
+ <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body bgcolor=#FADBD8 ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+  <center>
+    <ul>
+			<li><a href="Formulario.html"></a></li>
+		</ul>
+<form id="formulario" method="POST" action="#">
+<fieldset from="formulario" name="datos">
+<legend>Información personal</legend>
+<div name="personales" id="personales">
+<br>
+<label>Fotografía:</label>
+<input type="file" id="foto" accept="image/png, .jpeg, .jpg, image/gif" required="required"/>
+</br>
+			<br>
+		<label for="nom">Nombre(s):</label>
+		<input type="text" id="Nombre" pattern="[a-zA-Z]*"  required="required" onkeypress="return validaTexto(event)" align="lefth"/>
+			</br>
+			<br>
+		<label ror=apeP>Apellido P:</label>
+		<input type="text" id="apellidoP" pattern="[a-zA-Z]*" required="required" onkeypress="return validaTexto(event)"/>
+			</br>
+			<br>
+		<label for="apeM">Apellido M:</label>
+		<input type="text" id="apellidoM" pattern="[a-zA-Z]*" required="required" onkeypress="return validaTexto(event)"/>
+			</br>
+      <br>
+      <label for="rfc">RFC:</label>
+  		<input type="text" id="rfc" pattern="[A-ZÑ]{3,4}\d{6}[A-V1-9][A-Z1-9][0-9A]*" placeholder="abcd1234567e8" maxlength="13"  required="required" onkeypress="return validaTexto(event)"/>
+  			</br>
+        <br>
+      <label for="sexo">Género:</label>
+      <input type="radio" id="Sexo" name="Sexo" value="Hombre" required="required" />Hombre
+  <input type="radio" id="Sexo" name="Sexo" value="Mujer" required="required" />Mujer
+  <input type="radio" id="Sexo" name="Sexo" value="Otro" required="required" />Otro
+        </br>
+
+		<br><label for="edad">Edad:</label>
+		<select name="select" id="select">
+      <option value="" select>Seleccione edad</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+			<option value="32">32</option>
+			<option value="33">33</option>
+			<option value="34">34</option>
+			<option value="35">35</option>
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+			<option value="47">47</option>
+			<option value="48">48</option>
+			<option value="49">49</option>
+			<option value="50">50</option>
+			<option value="51">51</option>
+			<option value="52">52</option>
+			<option value="53">53</option>
+			<option value="54">54</option>
+			<option value="55">55</option>
+			<option value="56">56</option>
+			<option value="57">57</option>
+			<option value="58">58</option>
+			<option value="59">59</option>
+			<option value="60">60</option>
+			<option value="61">61</option>
+			<option value="62">62</option>
+			<option value="63">63</option>
+			<option value="64">64</option>
+			<option value="65">65</option>
+			<option value="66">66</option>
+			<option value="67">67</option>
+			<option value="68">68</option>
+			<option value="69">69</option>
+			<option value="70">70</option>
+		</select>
+  </br>
+
+
+<br>
+    <label for="estadoC">Situación civil:</label><br>
+    <input id="estadoC" type="radio" name="estadoC" value="Soltero" required="required"> Soltero
+    <input id="estadoC" type="radio" name="estadoC" value="Casado" required="required"> Casado
+    <input id="estadoC" type="radio" name="estadoC" value="Viudo" required="required"> Viudo
+  </br></br>
+
+<br>
+<label for="Telefono"><strong>Teléfono</strong></label>
+<br>
+<label>Casa:</label><input type="tel" id="tCasa" pattern="[0-9]*" placeholder="Diez dígitos" maxlength="10" required="required" /></br>
+<br>
+<label>Movil:</label><input type="tel" id="tMovil" pattern="[0-9]*"  placeholder="Diez dígitos" maxlength="10" required="required" />
+</br></br>
+
+			<br>
+		<label for="Email">Email:</label>
+		<input type="email" pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="aaaa@dominio.com" id="Email" required="required"/>
+      </br>
+
+      <br>
+    <label for="domi">Domicilio:</label>
+    <input type="text" name="Domi" id="Domi" pattern="[a-zA-Z]*" required="required"/>
+      </br>
+
+
+      <br>
+          <label for="nac">Nacionalidad:</label></br><br>
+          <input type="radio" name="Nac" value="Mexicano" required> Mexicano
+          <input type="radio" name="Nac" value="Colombiano" required> Colombiano
+          <input type="radio" name="Nac" value="Japones" required> Japonés</p>
+          <input type="radio" name="Nac" value="Coreano" required> Coreano
+          <input type="radio" name="Nac" value="Britanico" required> Británico
+            </br>
+
+            <br><label for="estado">Estado:</label>
+            <select name="Se" id="Se">
+              <option value="" selected> Seleccione estado</option>
+              <option value="1">Veracruz</option>
+              <option value="2">Yucatán</option>
+              <option value="3">Chihuahua</option>
+              <option value="4">Nayarit</option>
+              <option value="5">Jalisco</option>
+
+              </select>
+      			<br>
+            <br><label for="cd">Ciudad:</label>
+            <select name="Cdd" id="Cdd">
+              <option value="" selected>Seleccione ciudad</option>
+              <option value="1">Orizaba</option>
+              <option value="2">Córdoba</option>
+              <option value="3">Río Blanco</option>
+              <option value="4">Nogales</option>
+              <option value="5">Mendoza</option>
+              </select>
+			</br>
+</div>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Información académica</legend>
+  <div name="academicos" id="academicos">
+    <br>Grado máximo de estudios:</br>
+    <br><input type="radio" name="GradoE" value="Primaria" required="required" />Primaria
+  <input type="radio" name="GradoE" value="Secundaria" required="required" />Secundiaria
+  <input type="radio" name="GradoE" value="Bachillerato" required="required" />Bachillerato</br>
+  <input type="radio" name="GradoE" value="Licenciatura" required="required" />Licenciatura
+  <input type="radio" name="GradoE" value="Maestria" required="required" />Maestría
+  <input type="radio" name="GradoE" value="Doctorado" required="required" />Doctorado
+</p>
+      <br>
+    ¿Titulado?
+    <input type="radio" name="Titulo" value="Si" required="required"> Si
+    <input type="radio" name="Titulo" value="No" required="required"> No
+  </br>
+<br>
+		<label for="institucion">Institución:</label>
+  <select name="escuela" id="escuela">
+    <option value="" selected>Seleccione una institución</option>
+    <option value="Escuela 1">Escuela 1</option>
+    <option value="Escuela 2">Escuela 2</option>
+    <option value="Escuela 3">Escuela 3</option>
+    <option value="Escuela 4">Escuela 4</option>
+    <option value="Escuela 5">Escuela 5</option>
+  </select>
+			</br>
+
+      <br>
+        <label>Cédula profesional:</label>
+        <br><input type="tel" id="Cedula" pattern="[0-9]*"  placeholder="Siete dígitos" maxlength="7" required="required"/></br></br>
+<br>
+        Últimos cursos o diplomados:
+    		<textarea name="formacion"  id ="formacionA" placeholder="Ingresa el nombre de los cursos y diplomados recibidos"></textarea>
+      </br>
+</div>
+</fieldset>
+<br>
+<fieldset>
+	<legend>Información laboral</legend>
+  <div name="profesionales" id="profesionales">
+
+    <label for="nomEmp" id="nomUltEmp">Nombre de la ultima empresa:</label>
+<br><input type="text" id="NomEmpresa" required="required" /></br>
+
+<br><label for="dirEmp" id="DirUltEmp">Direccion de la empresa:</label>
+<input type="text" id="DirEmpresa" required="required" /></br>
+
+<br><label for="puestoDes" id="UltPues">Puesto:</label>
+<input type="text" id="PuestoD" required="required" /></br>
+
+<br><label for="Calendario" id="FechaDeInicio">Fecha de inicio:</label>
+<input type="date" name="fecha" id="FechaI" size="8" required="required" /></br><br>
+<label for="Calendario" id="FechaDeFin">Fecha de terminación:</label><input type="date" name="fecha" id="FechaF" size="8" required="required" /></br>
+<br>
+<label for="jefeInme">Nombre del jefe inmediato:</label><br>
+<input type="text" id="NomJefe" required="required" onkeypress="return validaTexto(event)" /></br></br>
+
+<br><label for="Telefono"><strong>Telefono</strong></label><br>
+<label>Movil:</label><input type="tel" id="telmovil" pattern="[0-9]*" placeholder="Diez digitos" maxlength="10" required="required"/></br><br>
+<label>Ext: </label><input type="tel" id="ext" required="required"/></br></br>
+</div>
+</fieldset>
+      </br>
+
+
+
+<br>
+<fieldset>
+	<legend>Referencias</legend>
+			<div name="Ref">
+		<center>Referencia 1:
+			<br>
+		<textarea name="Ref1" id="Ref1" required="required"></textarea>
+  </br></p>
+		Referencia 2:
+  <br>
+		<textarea name="Ref2" id="Ref2" required="required"></textarea>
+  </center>
+  </br>
+</div>
+</fieldset>
+</br>
+<br>
+<fieldset>
+<legend>Habilidades</legend>
+  <div name="Habil">
+   <center> Describa sus habilidades:<br>
+      <textarea name="Habilidades" id="Habilidades" required="required"  ></textarea>
+    </center>
+  </div>
+</fieldset>
+</br></br>
+    </p><center>
+      <button type="button" onclick="validarFormulario()" style="background-color:#C39BD3;">Enviar formulario</button>
+        <button id="cancel" type="button" onclick="cancelar()" style="background-color:	#FA8072;">Volver a llenar</button>
+        </center>
+</form>
+
+<div id="sfc2zf27kztcrwa6458e9c8jqghsm3f6m6p"></div>
+<script type="text/javascript" src="https://counter10.stat.ovh/private/counter.js?c=2zf27kztcrwa6458e9c8jqghsm3f6m6p&down=async" async></script>
+<noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas para web"><img src="https://counter10.stat.ovh/private/contadorvisitasgratis.php?c=2zf27kztcrwa6458e9c8jqghsm3f6m6p" border="0" title="contador de visitas para web" alt="contador de visitas para web"></a></noscript>
+
+<!------------------------------------------------------------------------------->
+
+<div id="MuestraDatos" hidden="true">
+
+  <center>
+    <fieldset id="PintaDatos">
+
+      <center><div id="foto"></div>
+      <center><H2 id="pTitulo"></H2></center>
+      <hr/>
+
+      <h3>DATOS PERSONALES</h3>
+        <center>
+          <label id="E"><strong>Edad:</strong></label><label id="pEdad"></label><br><br>
+          <label id="S"><strong>Sexo:</strong></label><label id="pSexo"></label><br><br>
+          <label id="RFC"><strong>RFC:</strong></label><label id="pRfc"></label><br><br>
+          <label id="Est"><strong>Estado civil:</strong></label><label id="pEstadoC"></label><br><br>
+          <label id="TC"><strong>Tel. Casa:</strong></label><label id="pTel1"></label><br><br>
+          <label id="TM"><strong>Tel. Movil:</strong></label><label id="pTel2"></label><br><br>
+          <label id="Em"><strong>Email:</strong></label><label id="pEmail"></label><br><br>
+          <label id="Nci"><strong>Nacionalidad:</strong></label><label id="pNac"></label><br><br>
+          <label id="Etd"><strong>Estado:</strong></label><label id="pEstado"></label><br><br>
+          <label id="Ciu"><strong>Ciudad:</strong></label><label id="pCd"></label><br><br>
+        </center>
+      <hr/>
+
+      <h3>HABILIDADES</h3>
+        <center>
+          <strong>Descripcion de habiliddes:</strong><br>
+          <label id="phabilidad"></label><br><br>
+        </center>
+      <hr/>
+
+      <h3>FORMACIÓN ACADÉMICA</h3>
+        <center>
+        <label id="Gm"><strong>Grado Max. de Estudios:</strong></label><label id="pGradoEst"></label><br><br><br><br>
+        <label id="NI"><strong>Nombre de Institución:</strong></label><label id="pNomInst"></label><br><br>
+        <label id="T"><strong>¿Titulado?:</strong></label><label id="pTitulado"></label><br><br>
+        <label id="Ced"><strong>Cédula profesional:</strong></label><label id="pCedula"></label><br><br>
+        <label id="FA"><strong>Formación adicional:</strong></label><label id="pFormacion"></label><br><br>
+        </center>
+      <hr/>
+
+      <h3>EXPERIENCIA PROFESIONAL </h3>
+        <center>
+         <center> <label id="NUE"><strong>Nombre de la ult. empresa:  </strong></label><label id="pNomEmp"></label></center><br><br><br><br>
+          <label id="DE"><strong>Dirección:  </strong></label><label id="pDirEmp"></label><br><br>
+          <label id="PD"><strong>Puesto desempeñado:  </strong></label><label id="pPuesto"></label><br><br>
+          <label id="f"><strong>Fecha de inicio: </strong></label>
+          <label id="pFI"><br><br>
+          </label><label><strong>Fecha de terminacion: </strong></label><label id="pFT"></label><br><br><br><br>
+          <label id="J"><strong>Nombre del jefe inmediato:  </strong></label><label id="pNombreJefe"></label><br><br><br><br>
+          <label><strong>Tel. Movil:</strong></label><label id="pMovil"></label><br><br>
+          <label><strong>Ext.:</strong></label><label id="pExtension"></label><br>
+        </center>
+      </hr>
+
+      <h3>REFERENCIAS </h3>
+        <center>
+         <center> <label id="R1"><strong>Primer referencia:  </strong></label><label id="pRef1"></label></center><br><br>
+         <center> <label id="R2"><strong>Segunda referencia:  </strong></label><label id="pRef2"></label>
+         </center>
+   </fieldset>
+  </center>
+
+  <br><br>
+
+  <div id="reg">
+    <center>
+      <button id="RegresaForm" type="button" onclick="MuestraForm()" hidden="true">Regresar</button>
+      <br><a href="#MuestraDatos"> Ir arriba </a><br></pre></center>
+    </center>
+  </div>
+</div>
+<body>
+</html>

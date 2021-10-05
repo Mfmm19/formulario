@@ -1,0 +1,85 @@
+body {
+	font: 1em/150% Lucida, Helvetica, sans-serif;
+
+}
+h1 {
+	font: bold 36px/100% Lucida, Helvetica, sans-serif;
+}
+h2{
+	font: bold 36px/100%;
+	color: #C39BD3;
+}
+h3{
+	color: #DC8E8E;
+}
+
+fieldset {
+width: 360px;
+border: 1px solid #1ABC9C;
+border-radius: 15px;
+padding: 50px;
+text-align: left;
+}
+legend {
+background-color: #1ABC9C;
+border: 1px solid #1ABC9C;
+border-radius: 10px;
+padding: 10px 20px;
+text-align: left;
+text-transform: uppercase;
+}
+
+#PintaDatos label{
+  width: 50%;
+  float: center;
+
+}
+
+/**   ESTRUCTURA  */
+#MuestraDatos {
+	width: 960px;
+	margin: 20px auto;
+}
+
+@media screen and (max-width: 980px) {
+
+	#MuestraDatos {
+		width: 94%;
+	}
+
+}
+div label {
+  width: 25%;
+  float: left;
+}
+
+#profesionales label{
+	width: 50%;
+	float: left;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.home{
+  display: flex;
+}
+
+.flex{
+  flex: 1;
+  min-width: 300px;
+}
+
+.flex: first-child{
+  flex: 2;
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.flex div{
+padding: 25px;
+margin: 20px;
+}
